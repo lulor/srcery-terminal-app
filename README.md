@@ -1,2 +1,2 @@
-# srcery-terminal-app
-The srcery colorscheme, patched for Terminal.app
+# Srcery for Terminal.app
+The [srcery](https://srcery-colors.github.io) colorscheme, patched for Terminal.app
