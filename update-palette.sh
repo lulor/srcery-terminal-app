@@ -4,11 +4,11 @@
 
 URL="https://github.com/srcery-colors/srcery-terminal/raw/master/palette.json"
 
-curl -sL $URL \
-	| sed 's/{//g' \
-	| sed 's/}//g' \
-	| sed 's/"//g' \
-	| sed 's/,//g' \
-	| sed 's/^[ \t]*//' \
-	| sed '/^[[:space:]]*$/d' \
+curl -sL $URL | sed \
+	-e 's/{//g' \
+	-e 's/}//g' \
+	-e 's/"//g' \
+	-e 's/,//g' \
+	-e 's/^[ \t]*//' \
+	-e '/^[[:space:]]*$/d' \
 	> palette.txt
