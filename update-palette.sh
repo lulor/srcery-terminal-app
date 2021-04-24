@@ -7,7 +7,7 @@ URL="https://github.com/srcery-colors/srcery-terminal/raw/master/palette.json"
 
 [ -f $FILE ] && chmod +w $FILE
 
-curl -sL $URL | sed \
+curl -sL $URL | grep -v cursor | sed \
 	-e 's/{//g' \
 	-e 's/}//g' \
 	-e 's/"//g' \
